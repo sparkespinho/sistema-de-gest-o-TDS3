@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/ocorrencias.css">
+  <title>Registrar Ocorrência</title>
+</head>
+<body>
+
+  <button onclick="window.location.href='index.html'" style="margin-bottom:16px">← Voltar</button>
+  <h1>Registrar Ocorrência</h1>
+
+  <form id="reportForm">
+
+    <label for="Laboratorio">Laboratório</label>
+    <select id="Laboratorio" required>
+      <option value="">Selecione o laboratório</option>
+    </select>
+
+    <label for="dispositivo">Dispositivo</label>
+    <select id="dispositivo" required>
+      <option value="">Selecione o laboratório primeiro</option>
+    </select>
+
+    <label for="Problema">Tipo do Problema</label>
+    <select id="Problema" required>
+      <option value="">Selecione</option>
+      <option value="imagem">Sem imagem</option>
+      <option value="componentes">Sem componentes</option>
+      <option value="internet">Sem internet</option>
+      <option value="ligando">Não está ligando</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <label for="problema">Descrição do Problema</label>
+    <textarea id="problema" rows="4" placeholder="Descreva o problema com mais detalhes..." required></textarea>
+
+    <button type="submit">Enviar Ocorrência</button>
+  </form>
+
+  <script src="script/api.js"></script>
+  <script src="script/ocorrencia.js"></script>
+</body>
+</html>

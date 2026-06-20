@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/perfilestilo.css">
+  <title>Meu Perfil</title>
+  
+</head>
+<body>
+
+  <div class="topo">
+    <button class="btn-voltar" onclick="window.location.href='index.html'">← Voltar</button>
+    <button onclick="deslogar()" style="background:#E53935; color:white; padding:8px 16px; 
+    border:none; border-radius:6px; cursor:pointer; font-weight:600;">Sair</button>
+    <h1>Meu Perfil</h1>
+  </div>
+
+  <div class="card">
+
+ 
+    <div class="avatar-box">
+      <div class="avatar" id="avatar">👤</div>
+      <div class="usuario-nome" id="usuario-nome">Carregando...</div>
+      <div class="usuario-email" id="usuario-email"></div>
+    </div>
+
+    
+    <div class="secao">
+      <div class="secao-titulo">Informações da conta</div>
+      <div class="info-row">
+        <span>Telefone</span>
+        <span id="info-telefone">—</span>
+      </div>
+      <div class="info-row">
+        <span>Cargo</span>
+        <span id="info-cargo">—</span>
+      </div>
+      <div class="info-row">
+        <span>Permissão</span>
+        <span id="info-permissao">—</span>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="script/api.js"></script>
+  <script src="script/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+  background: url(/frontend/imagens/fundo-verde-gradiente-vetor.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+}
+
+h1{
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #263238;
+}
+
+input, select{
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#btn-voltar{
+  margin-bottom:16px;
+  background: #208711b5; 
+  color:white;
+  padding:8px 16px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+
+}
+
+.btn-add{
+  background: #43A047;
+  color: white;
+}
+
+.btn-edit{
+  background:#58b187;
+  color: white;
+}
+
+.btn-save{
+  background: #43A047;
+  color: white;
+}
+
+.btn-cancel{
+  background: #90A4AE;
+  color: white;
+}
+
+.btn-remove{
+  background: #E53935;
+  color: white;
+}
+
+.btn-sm{
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.add-lab-bar{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.add-lab-bar input{
+  flex: 1;
+}
+
+.labs-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.lab-btn{
+  position: relative;
+  background: #0a4d2d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.lab-btn:hover{
+  background: #052918;
+  transform: translateY(-1px);
+}
+
+.lab-btn.ativo{
+  background: #739b88;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.lab-btn .contador{
+  background: rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: 1px 8px;
+  font-size: 12px;
+}
+
+.lab-btn-acoes{
+  display: flex;
+  gap: 4px;
+  margin-left: 4px;
+}
+
+.lab-btn-acoes button {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.lab-btn-acoes button:hover{
+  background: rgba(255,255,255,0.4);
+}
+
+.painel{
+  display: none;
+  background-image: linear-gradient(50deg, rgba(0, 39, 29, 0.750),rgba(0, 37, 0, 0.750));
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 2px solid #02380b;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.painel.visivel{
+  display: block;
+}
+
+.painel-titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #73a782;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lab-edit-row{
+  display: none;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.lab-edit-row input{
+  flex: 1;
+}
+
+.maquina-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #F5F5F5;
+  border: 1px solid #EEE;
+  border-radius: 7px;
+  margin-bottom: 7px;
+}
+
+.maquina-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.maquina-numero{
+  font-weight: 700;
+  font-size: 13px;
+  color: #78909C;
+  min-width: 36px;
+}
+
+.maquina-nome{
+  font-size: 14px;
+  color: #263238;
+}
+
+.badge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.badge-ok{
+  background: #43A047;
+}
+
+.badge-problema{
+  background: #E53935;
+}
+
+.maquina-acoes{
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.maquina-edit-row{
+  display: none;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
+
+.maquina-edit-row input{
+  flex: 1;
+  min-width: 80px;
+}
+
+.add-maquina-row{
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.add-maquina-row input{
+  flex: 1;
+  min-width: 80px;
+}

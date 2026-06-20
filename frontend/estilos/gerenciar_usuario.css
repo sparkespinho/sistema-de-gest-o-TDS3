@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: url(/frontend/imagens/fundo-verde-gradiente-vetor.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 24px; 
+}
+
+.topo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:24px;
+}
+
+h1{
+  font-size:22px;
+  color:#263238;
+}
+
+button{ 
+  padding:8px 16px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:600;
+}
+
+.btn-voltar{ 
+  background: #208711b5;
+  color:white;
+}
+
+.btn-ativar{ 
+  background:#43A047;
+  color:white;
+  font-size:11px;
+  padding:4px 10px;
+}
+
+.btn-inativar{ 
+  background:#FFA726;
+  color:white;
+  font-size:11px;
+  padding:4px 10px;
+}
+
+.btn-excluir{ 
+  background:#E53935;
+  color:white;
+  font-size:11px;
+  padding:4px 10px;
+}
+
+.btn-salvar{
+  background:#43A047;
+  color:white;
+  font-size:11px;
+  padding:4px 10px;
+}
+
+.btn-cancelar{
+  background:#90A4AE;
+  color:white;
+  font-size:11px;
+  padding:4px 10px;
+}
+
+.busca-bar{
+  display:flex;
+  gap:8px;
+  margin-bottom:16px;
+  max-width:400px;
+}
+
+.busca-bar input{
+  flex:1;
+  padding:8px 12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:14px;
+}
+
+.usuario-card{
+  background: linear-gradient(50deg, rgba(0, 39, 29, 0.750), rgba(0, 37, 0, 0.750));
+  backdrop-filter: blur(10px);
+  border: 2px solid #02380b;
+  border-radius:10px;
+  width: 170%;
+  padding:16px 20px;
+  margin-bottom:12px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.08);
+  border-left:4px solid #00c90a;
+}
+
+.usuario-card.inativo{
+  border-color:#E53935;
+  opacity:0.75;
+}
+
+.usuario-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.usuario-info{
+  flex:1;
+}
+
+.usuario-nome{
+  font-weight:700;
+  font-size:15px;
+  color:#d5ffd0;
+}
+
+.usuario-email{
+  font-size:13px;
+  color:#78909C;
+}
+
+.usuario-acoes{
+  display:flex;
+  gap:6px; flex-wrap:wrap;
+}
+
+.badge{
+  font-size:10px;
+  padding:2px 8px;
+  border-radius:20px;
+  color:white;
+  font-weight:700;
+  margin-left:8px;
+}
+
+.badge-ativo{
+  background:#43A047;
+}
+
+.badge-inativo{
+  background:#E53935;
+}
+
+.badge-admin{
+  background:#7B1FA2;
+}
+
+.badge-tecnico{
+  background:#1E88E5;
+}
+
+.badge-visualizador{
+  background:#78909C;
+}
+
+.usuario-detalhes{
+  font-size:13px;
+  color:#546E7A;
+  margin-top:8px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.permissao-edit{
+  display:none;
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid #EEE;
+  align-items:center;
+  gap:8px;
+}
+
+.permissao-edit select{
+  padding:6px 10px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:13px;
+}
+
+.vazio{
+  color:#90A4AE;
+  text-align:center;
+  padding:40px;
+  font-size:14px;
+}
+
+#lista-usuarios{
+  max-width:800px;
+}
