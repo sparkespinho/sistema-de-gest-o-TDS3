@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/gerenciar_usuario.css">
+  <title>Gerenciar Usuários</title>
+ 
+</head>
+<body>
+
+  <div class="topo">
+    <button class="btn-voltar" onclick="window.location.href='index.html'">← Voltar</button>
+    <h1>Gerenciar Usuários</h1>
+  </div>
+
+  <div class="busca-bar">
+    <input type="text" id="busca" placeholder="Buscar por nome ou email..." oninput="filtrarBusca()">
+  </div>
+
+  <div id="lista-usuarios"></div>
+
+  <script src="script/api.js"></script>
+  <script src="script/confirmacao.js"></script>
+  <script src="script/gerenciar_usuario.js"></script>
+</body>
+</html>

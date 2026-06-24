@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/estilo_gernciarlab.css">
+  <title>Laboratórios</title>
+</head>
+<body>
+
+  <button onclick="window.location.href='index.html'" id="btn-voltar">← Voltar</button>
+  <h1>Laboratórios</h1>
+
+  
+  <div class="add-lab-bar" id="add-lab-bar">
+    <input type="text" id="novoLab" placeholder="Nome do novo laboratório">
+    <button class="btn-add" onclick="adicionarLab()">+ Laboratório</button>
+  </div>
+
+  <div class="labs-grid" id="listaLabs"></div>
+
+  <div class="painel" id="painel">
+    <div class="painel-titulo" id="painel-titulo"></div>
+    <div class="lab-edit-row" id="lab-edit-row">
+      <input type="text" id="edit-lab-nome" placeholder="Novo nome">
+      <button class="btn-save btn-sm" onclick="salvarEdicaoLab()">Salvar</button>
+      <button class="btn-cancel btn-sm" onclick="fecharEdicaoLab()">Cancelar</button>
+    </div>
+    <div id="maquinas-lista"></div>
+    <!-- Só aparece para admin — escondido pelo JS -->
+    <div class="add-maquina-row" id="add-maquina-row" style="display:none">
+      <input type="text" id="nova-maquina-numero" placeholder="Nº" style="width:70px; flex:none">
+      <input type="text" id="nova-maquina-nome" placeholder="Nome da máquina">
+      <button class="btn-add" onclick="adicionarMaquina()">+ Máquina</button>
+    </div>
+  </div>
+
+  <script src="script/api.js"></script>
+  <script src="script/confirmacao.js"></script>
+  <script src="script/laboratorio_gerenciar.js"></script>
+</body>
+</html>

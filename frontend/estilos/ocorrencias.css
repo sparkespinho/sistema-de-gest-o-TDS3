@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: url(/frontend/imagens/fundo-verde-gradiente-vetor.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+}
+
+h1{
+  text-align: center;
+  color: #10110f;
+}
+
+form{
+  background: rgba(0, 39, 12, 0.507);
+  padding: 20px;
+  border: 2px solid #02380b;
+  border-radius: 8px;
+  max-width: 200%;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button{
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #208711b5;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #2d8554;
+}
+
+.report-list{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.report-item{
+  background: linear-gradient(50deg, rgba(0, 39, 29, 0.750), rgba(0, 37, 0, 0.750));
+  border: 2px solid #02380b;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.report-item h3 {
+  margin: 0 0 5px 0;
+}
+
+.report-item p {
+  margin: 3px 0;
+}
+

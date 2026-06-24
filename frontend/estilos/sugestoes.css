@@ -1,0 +1,295 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: url(/frontend/imagens/fundo-verde-gradiente-vetor.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+}
+
+h1{
+  font-size: 22px;
+  color: #012215;
+  margin-bottom: 20px;
+}
+
+input, textarea, select{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+textarea{
+  resize: vertical;
+}
+
+label{
+  font-size: 13px;
+  font-weight: 600;
+  color: #bac9c0;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.campo{
+  margin-bottom: 12px;
+}
+
+button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fundofiltro{
+  background: rgba(0, 39, 12, 0.507);
+  height: 100%;
+  padding: 20px;
+  border: 2px solid #02380b;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px #00000091;
+  backdrop-filter: blur(10px);
+}
+
+.btn-voltar{
+  background: #208711b5;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.btn-enviar{
+  background: #43A047;
+  color: white; width: 100%;
+  padding: 12px; font-size: 15px;
+}
+
+.btn-curtir{
+  background: #E3F2FD;
+  color: #1E88E5;
+  border: 1px solid #BBDEFB;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-curtir.curtido{
+  background: #1E88E5;
+  color: white;
+  border-color: #1E88E5;
+}
+
+.btn-comentar{
+  background: #F5F5F5;
+  color: #546E7A;
+  border: 1px solid #E0E0E0;
+}
+
+.btn-remover{
+  background: #FFEBEE;
+  color: #E53935;
+  border: 1px solid #FFCDD2;
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.btn-save{
+  background: #43A047;
+  color: white;
+}
+
+.btn-cancel{
+  background: #90A4AE;
+  color: white;
+}
+
+.btn-sm{
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.layout{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 680px){
+  .layout{
+    grid-template-columns: 1fr;
+  }
+}
+
+.card{
+  background-image: linear-gradient(50deg, rgb(0, 39, 29),rgb(0, 37, 0));
+  border-radius: 10px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h2{
+  font-size: 16px;
+  color: #c7d6d1;
+  margin-bottom: 14px;
+}
+
+.filtros{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.filtros button{
+  background: #f4fff3;
+  color: #264408;
+  border: 1px solid rgb(92, 139, 45);
+}
+
+.filtros button.ativo{
+  background: #129764;
+  color: white;
+  border-color: #185a41;
+}
+
+.sug-card{
+  background-image: linear-gradient(50deg, rgb(0, 39, 29),rgb(0, 37, 0));
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border-left: 4px solid #90A4AE;
+}
+
+.sug-card.pendente{
+    border-color: #FFA726;
+}
+
+.sug-card.implementada{
+  border-color: #43A047;
+}
+
+.sug-card.recusada{
+  border-color: #E53935;
+}
+
+.sug-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.sug-titulo{
+  font-weight: 700;
+  font-size: 15px;
+  color: #e6ffe1;
+  flex: 1;
+}
+.sug-meta{
+  font-size: 11px;
+  color: #90A4AE;
+  margin-bottom: 10px;
+}
+
+.sug-desc{
+  font-size: 14px;
+  color: #455A64;
+  margin-bottom: 12px;
+}
+
+.badge{
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-pendente{
+  background: #FFA726;
+}
+
+.badge-implementada{
+  background: #43A047;
+}
+
+.badge-recusada{
+  background: #E53935;
+}
+
+.sug-acoes{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comentarios{
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #EEE;
+  display: none;
+}
+
+.comentarios.aberto{
+  display:block;
+}
+
+.comentario-item{
+  background: #F5F5F5;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.comentario-autor{
+  font-weight: 700;
+  color: #455A64;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.comentario-texto{
+  color: #263238;
+}
+
+.comentario-acoes{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.add-comentario{
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.add-comentario input{
+  flex: 1;
+}
+
+.vazio{
+  color: #90A4AE;
+  font-size: 14px;
+  text-align: center; 
+  padding: 30px;
+}

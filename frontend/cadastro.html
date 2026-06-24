@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/estilocadastro.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Cadastro</title>
+
+</head>
+<body>
+  <div>
+    <h2>Cadastro</h2>
+
+    
+      <label>Nome completo</label>
+      <i class="bx bxs-user"> *</i>
+      <input id="nome" type="text" placeholder="Seu nome">
+    
+      <label>Email</label>
+      <i class="bx bxs-envelope"> *</i>
+      <input id="email" type="email" placeholder="seu@email.com">
+    
+      <label>Senha</label>
+      <i class="bx bxs-lock-alt"> *</i>
+      <input id="senha" type="password" placeholder="Mínimo 6 caracteres">
+
+    <p class="divisor">Informações opcionais</p>
+    
+      <label>Telefone</label>
+      <i class="bx bxs-phone"></i>
+      <input id="telefone" type="tel" placeholder="(00) 00000-0000">
+
+    <button id="botao">Cadastrar</button>
+
+    <p id="mensagem"></p>
+    <p style="margin-top:12px; text-align:center">
+      Já tem conta? <a href="login.html">Entrar</a>
+    </p>
+  </div>
+  
+  <script src="script/api.js"></script>
+  <script src="script/cadastro.js"></script>
+</body>
+</html>

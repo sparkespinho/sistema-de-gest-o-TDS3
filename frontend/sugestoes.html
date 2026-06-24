@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/sugestoes.css">
+  <title>Sugestões</title>
+
+</head>
+<body>
+
+  <button class="btn-voltar" onclick="window.location.href='index.html'">← Voltar</button>
+  <h1>Sugestões</h1>
+
+  <div class="layout">
+
+   
+    <div class="card">
+      <h2>Nova sugestão</h2>
+
+      <div class="campo">
+        <label>Título</label>
+        <input id="titulo" type="text" placeholder="Resumo da sugestão">
+      </div>
+
+      <div class="campo">
+        <label>Descrição</label>
+        <textarea id="descricao" rows="4" placeholder="Explique sua sugestão..."></textarea>
+      </div>
+
+      <button class="btn-enviar" onclick="enviarSugestao()">Enviar sugestão</button>
+      <p id="mensagem" style="margin-top:10px; font-size:13px; text-align:center"></p>
+    </div>
+
+    
+    <div class="fundofiltro">
+      <div class="filtros">
+        <button class="ativo" onclick="filtrar('todos', this)">Todos</button>
+        <button onclick="filtrar('pendente', this)">Pendentes</button>
+        <button onclick="filtrar('implementada', this)">Implementadas</button>
+        <button onclick="filtrar('recusada', this)">Recusadas</button>
+      </div>
+      <div id="listaSugestoes"></div>
+    </div>
+
+  </div>
+
+<script src="script/confirmacao.js"></script>
+<script src="script/sugestoes.js"></script>
+</body>
+</html>
